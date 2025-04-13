@@ -1,0 +1,79 @@
+:root {
+  font-family: var(--primary-font-family);
+  color: var(--primary-black-color);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.MuiTableContainer-root {
+  @media screen and (min-width: 768px) {
+    width: auto !important;
+  }
+}
+
+.MuiTable-root {
+  font-family: var(--primary-font-family) !important;
+  color: var(--primary-black-color) !important;
+  font-weight: 500 !important;
+}
+
+.MuiTableHead-root {
+  font-size: 16px !important;
+}
+
+.MuiTableRow-root {
+  font-family: var(--primary-font-family) !important;
+  color: var(--primary-black-color) !important;
+}
+
+.MuiTableCell-root {
+  font-family: var(--primary-font-family) !important;
+  color: var(--primary-black-color) !important;
+  padding: 16px 14px !important;
+}
+
+.Mui-selected {
+  background-color: var(--primary-green-color) !important;
+  color: white !important;
+}
+
+.MuiPaginationItem-firstLast {
+  color: var(--primary-green-color) !important;
+  background-color: transparent !important;
+}
+
+.MuiPaginationItem-firstLast:hover {
+  background-color: var(--primary-green-color) !important;
+  color: white !important;
+}
+
+@media screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-green-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-white-color);
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: #ccc;
+  }
+
+  :hover::-webkit-scrollbar {
+    display: block;
+  }
+}

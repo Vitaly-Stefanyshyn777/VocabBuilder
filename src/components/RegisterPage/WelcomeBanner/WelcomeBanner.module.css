@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.imgMobile {
+  width: 247px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.imgDesktop {
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+    width: 498px;
+  }
+}
+
+.textList {
+  display: flex;
+}
+
+.textItem {
+  position: relative;
+}
+
+.text {
+  font-size: 14px;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.8);
+  padding: 0 7px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.text::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  width: 2px;
+  height: 2px;
+  background-color: rgba(18, 20, 23, 0.8);
+}
+
+.textItem:last-child .text::after {
+  display: none;
+}
